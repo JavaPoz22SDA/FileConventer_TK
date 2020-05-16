@@ -5,7 +5,11 @@ public class Main {
 
         Converter converter = new Converter();
         String sourceFilePath = "test.json";
-        String outputFilePath = "test.xlsx";
+        String sourceFilePath2= "test.csv";
+        String sourceFilePath3= "testOut.xlsx";
+        String outputFilePath = "testOut.xlsx";
         converter.convert(sourceFilePath, outputFilePath);
+        converter.convert(sourceFilePath2, outputFilePath);
+        converter.convert(sourceFilePath3, outputFilePath);
     }
 }

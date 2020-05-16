@@ -32,7 +32,7 @@ public class JSONReader implements Reader{
                 JSONObject record = new JSONObject(rawObject.toString());
                 Map<String,Object> map = new HashMap<>();
                 for (String key:record.keySet()){
-                    map.put(key, (Object) record.get(key));
+                    map.put(key, record.get(key));
                 }
                 result.add(map);
             }

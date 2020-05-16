@@ -5,8 +5,10 @@ public class ReaderFactory {
 
         if(filePath.endsWith(".json"))
             return new JSONReader();
-
-        //TODO CSVReader, i ExcelReader
+        if(filePath.endsWith(".csv"))
+            return new CSVReader();
+        if(filePath.endsWith(".xlsx"))
+            return new ExcelReader();
         return null;
     }
 }
