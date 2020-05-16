@@ -29,12 +29,14 @@ public class ExcelReader implements Reader {
 
             while (rowIterator.hasNext()) {
                 Row row = rowIterator.next();
+                if (row.getRowNum() > 0) {
 
-                Map<String, Object> map = new HashMap<>();
-                for (int i = 0; i < size; i++) {
-                    map.put(hederRow.getCell(i).toString(), row.getCell(i));
+                    Map<String, Object> map = new HashMap<>();
+                    for (int i = 0; i < size; i++) {
+                        map.put(hederRow.getCell(i).toString(), row.getCell(i));
+                    }
+                    result.add(map);
                 }
-                result.add(map);
             }
         } catch (IOException e) {
             e.printStackTrace();
