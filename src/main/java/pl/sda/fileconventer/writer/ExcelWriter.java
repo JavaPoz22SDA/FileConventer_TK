@@ -1,10 +1,10 @@
-package pl.sda.fileconventer;
+package pl.sda.fileconventer.writer;
 
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import pl.sda.fileconventer.writer.Writer;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package pl.sda.fileconventer;
+package pl.sda.fileconventer.reader;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JSONReader implements Reader{
+public class JSONReader implements Reader {
 
     private Path path;
 
@@ -22,9 +22,7 @@ public class JSONReader implements Reader{
         try {
             path= Paths.get(inputFilePath);
             byte[] bytes = Files.readAllBytes(path);
-           // System.out.println(bytes);
             String content=new String(bytes);
-            //System.out.println(content);
 
             JSONArray jsonArray=new JSONArray(content);
             for (int i = 0; i < jsonArray.length(); i++) {

@@ -1,4 +1,4 @@
-package pl.sda.fileconventer;
+package pl.sda.fileconventer.reader;
 
 import java.util.List;
 import java.util.Map;

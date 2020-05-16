@@ -1,18 +1,15 @@
-package pl.sda.fileconventer;
-
-import java.util.List;
-import java.util.Map;
+package pl.sda.fileconventer.writer;
 
 public class WriterFactory  {
 
-    Writer produce(String outputFilePath){
-//        if(outputFilePath.endsWith(".json"))
-//            return new JSONReader();
+    public Writer produce(String outputFilePath){
+
+        if(outputFilePath.endsWith(".json"))
+            return new JSONWriter();
 //        if(outputFilePath.endsWith(".csv"))
 //            return new CSVReader();
         if(outputFilePath.endsWith(".xlsx"))
             return new ExcelWriter();
         return null;
     }
-
 }

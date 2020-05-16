@@ -1,4 +1,4 @@
-package pl.sda.fileconventer;
+package pl.sda.fileconventer.reader;
 
 public class ReaderFactory {
     public Reader produce(String filePath){
