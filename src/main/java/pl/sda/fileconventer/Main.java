@@ -5,8 +5,8 @@ public class Main {
 
         Converter converter = new Converter();
         //String sourceFilePath = "test.json";
-        String sourceFilePath= "test.csv";
-        //String sourceFilePath= "testOut.xlsx";
+        //String sourceFilePath= "test.csv";
+        String sourceFilePath= "test.xlsx";
 
         //String outputFilePath = "testOut.xlsx";
         String outputFilePath = "testOut.json";
