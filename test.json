@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jan",
+    "lastName": "Kowalski",
+    "age": 22,
+    "city": "Poznań"
+  },
+  {
+    "name": "Jan",
+    "lastName": "Nowak",
+    "age": 33,
+    "city": "Toruń"
+  }
+]
